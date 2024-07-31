@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap');
+body{
+    background-color: rgb(7,7,29);
+    font-size: small;
+    font-family:  Roboto;
+    font-weight: light;
+}
+.img-fluid{
+    width: 150px;
+}
+#div .img-fluid{
+    transition-timing-function: ease;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+#div #link-section .img-fluid:hover{
+    transform: scale(1.03);
+}
+#div .h4:hover{
+    color: blue;
+}
+.navbar{
+    gap: 30em;
+}
+.nav-item:hover{
+    transform: scale(1.20);
+}
+.icon:hover{
+    color: white;
+}
+#btn{
+    background-color: #161632;
+    color: white;
+    transition-property: transform ;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.3s;
+    transition: transform 0.3s color 0.5s;
+    font-weight: light;
+}
+#btn:hover{
+    transform: translateY(-5px);
+    color: lightblue;
+}
+
+#sub-div .h4{
+    width: 15em;
+}
+#footer-links{ 
+    gap:3em;
+    font-size: 15px;
+}
+
+#sub-div .h5{
+    width: 17em;
+    font-size: 20px;
+}
+.longimg{
+    height: 12.9em;
+}
+.footer{
+    width: 730px;
+}
+#footer-links{
+    padding-top: -200px;
+}
+.last-section-items{
+    display: flex;
+}
+
+@media(max-width: 960px){
+    #firstimg{
+        height: 290px;
+        object-fit: cover;
+    }
+}
+@media(max-width: 855px){
+    .navbar{
+        gap: 25em;
+    }
+}
+@media(max-width: 780px){
+    .navbar{
+        gap: 20em;
+    }
+}
+@media(max-width: 770px){
+    .first-page-items{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1em;
+    } 
+    #btn{
+        width: 7.5em;
+        font-size: 1em;
+    }
+    .footer{
+        width: 700px;
+    }
+    
+}
+@media(max-width: 740px){
+    #div div{
+        width: 300px;
+    }
+    #sub-div .h5{
+        width: 14em;
+    }
+    #sub-div .h4{
+        width: 12em;
+    }
+    .footer{
+        width: 650px;
+    }
+
+}
+
+@media(max-width: 696px){
+    .navbar{
+        gap: 15em;
+    }
+    .footer{
+        width: 600px;
+    }
+}
+@media(max-width: 665px){
+    .footer{
+        width: 550px;
+    }
+}
+@media(max-width: 650px){
+    #div div{
+        width: 250px;
+    }
+    #sub-div .h5{
+        width: 13em;
+    }
+    .footer{
+        width: 550px;
+    }
+    
+}
+@media(max-width: 618px){
+    .navbar{
+        gap:10em;
+    }
+    .footer{
+        width: 500px;
+    }
+}
+@media(max-width: 600px){
+    .last-section-items{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width: 589px){
+    #firstsetbutton{
+        gap:1em;
+    }
+}
+@media(max-width: 570px){
+    #firstsetbutton, #secondsetbutton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #btn{
+        width: 20em;
+    }
+    #div{
+        display: flex;
+        flex-direction: column;
+    }
+    #div div{
+        width: 340px;
+    }
+    #sub-div .h5{
+        width: 17em;
+    }
+    #sub-div .h4{
+        width: 14em;
+    }
+}
+@media(max-width: 520px){
+    .footer{
+        width: 400px;
+    }
+}
+@media(max-width: 430px){
+    .footer{
+        width: 350px;
+    }
+    .last-section-items{
+        font-size: 10px;
+    }
+}
+@media(max-width: 414px){
+    .navbar{
+        gap:10em;
+        display: flex;
+        justify-content: right;
+    }
+    .footer{
+        width: 300px;
+    }
+}
+@media(max-width: 380px){
+    .img-fluid{
+        width: 120px;
+    }
+    #div div{
+        width: 320px;
+    }
+    .footer{
+        width: 300px;
+    }
+}
+@media(max-width: 340px){
+    .navbar{
+        gap: 5em;
+    }
+    #div div{
+        width: 280px;
+    }
+    #sub-div .h5{
+        width: 13em;
+    }
+
+}

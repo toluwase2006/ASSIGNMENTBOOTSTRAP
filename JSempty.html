@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="JSempty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <!-- nav section -->
+     <nav class="navbar py-4 container-fluid  justify-content-center align-items-center">
+        <img src="/assets/30s-logo.png" class="img-fluid" alt="">
+        <div>
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" class="nav-link d-none d-sm-block text-secondary">
+                    <svg width="1.25rem" height="1.25rem" viewBox="0 0 128 128" fill="none" title="Home" aria-label="Home" class="icon"><g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"><path d="M16 42.667A5.333 5.333 0 0 1 21.333 48v58.667A5.333 5.333 0 0 0 26.667 112h74.666a5.336 5.336 0 0 0 5.334-5.333V48a5.333 5.333 0 0 1 10.666 0v58.667a15.998 15.998 0 0 1-16 16H26.667a15.999 15.999 0 0 1-16-16V48A5.333 5.333 0 0 1 16 42.667Z"></path><path d="M42.667 64A5.333 5.333 0 0 1 48 58.667h32A5.333 5.333 0 0 1 85.333 64v53.333a5.334 5.334 0 1 1-10.666 0v-48H53.333v48a5.334 5.334 0 1 1-10.666 0V64Z"></path><path d="M60.623 1.206a5.333 5.333 0 0 1 6.754 0l58.667 48a5.333 5.333 0 1 1-6.754 8.255L64 12.224 8.71 57.461a5.333 5.333 0 0 1-6.754-8.255l58.667-48Z"></path></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h128v128H0z"></path></clipPath></defs></svg></a>
+                </li>
+                <li class="nav-item">
+                    <a href="simplecolection.html" class="nav-link d-none d-sm-block text-secondary"><svg width="1.25rem" height="1.25rem" viewBox="0 0 128 128" fill="none" title="Collections" aria-label="Collections" class="icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 94.25c0-2.9 2.35-5.25 5.25-5.25h4.5a5.25 5.25 0 1 1 0 10.5h-4.5A5.25 5.25 0 0 1 21 94.25ZM46 94.25c0-2.9 2.35-5.25 5.25-5.25h49.5a5.25 5.25 0 0 1 0 10.5h-49.5A5.25 5.25 0 0 1 46 94.25ZM21 64.25c0-2.9 2.35-5.25 5.25-5.25h4.5a5.25 5.25 0 1 1 0 10.5h-4.5A5.25 5.25 0 0 1 21 64.25ZM46 64.25c0-2.9 2.35-5.25 5.25-5.25h49.5a5.25 5.25 0 0 1 0 10.5h-49.5A5.25 5.25 0 0 1 46 64.25ZM21 34.25c0-2.9 2.35-5.25 5.25-5.25h4.5a5.25 5.25 0 1 1 0 10.5h-4.5A5.25 5.25 0 0 1 21 34.25ZM46 34.25c0-2.9 2.35-5.25 5.25-5.25h49.5a5.25 5.25 0 0 1 0 10.5h-49.5A5.25 5.25 0 0 1 46 34.25Z" fill="currentColor"></path></svg></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link text-secondary d-block" data-bs-toggle="modal" data-bs-target="#type-modal"><svg width="1.25rem" height="1.25rem" viewBox="0 0 128 128" fill="none" title="Search" aria-label="Search" class="icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M53.333 18.667c-19.145 0-34.666 15.52-34.666 34.666C18.667 72.48 34.187 88 53.333 88 72.48 88 88 72.48 88 53.333c0-19.145-15.52-34.666-34.667-34.666ZM8 53.333C8 28.296 28.296 8 53.333 8s45.334 20.296 45.334 45.333S78.37 98.667 53.333 98.667C28.296 98.667 8 78.37 8 53.333Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M84.229 82.362a5.333 5.333 0 0 1 7.542 0l24 24a5.334 5.334 0 0 1-7.542 7.543l-24-24a5.333 5.333 0 0 1 0-7.543Z" fill="currentColor"></path></svg></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link text-secondary d-none d-sm-block"><svg width="1.25rem" height="1.25rem" viewBox="0 0 128 128" fill="none" title="GitHub" aria-label="GitHub" class="icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.493 89.373a5.333 5.333 0 0 1 6.467-3.88c4.351 1.087 7.266 4.019 9.35 6.465a94.373 94.373 0 0 1 2.21 2.735c.273.346.536.68.784.99.952 1.193 1.847 2.258 2.8 3.212 1.848 1.848 3.84 3.2 6.528 3.829 2.757.645 6.775.652 12.836-1.166a5.334 5.334 0 0 1 3.064 10.217c-7.273 2.182-13.254 2.523-18.33 1.335-5.146-1.205-8.821-3.853-11.64-6.672-1.38-1.38-2.568-2.814-3.595-4.1a207.96 207.96 0 0 1-.969-1.225c-.642-.815-1.204-1.53-1.808-2.238-1.75-2.054-2.835-2.789-3.817-3.034a5.333 5.333 0 0 1-3.88-6.468Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M114.667 45.44A5.333 5.333 0 0 1 120 50.773c0 15.714-4.807 26.253-12.794 32.969-5.367 4.513-11.779 6.953-18.1 8.346a23.306 23.306 0 0 1 1.561 10.134v20.445a5.333 5.333 0 0 1-10.667 0v-20.64c0-.14.005-.279.016-.419a12.639 12.639 0 0 0-3.525-9.789 5.333 5.333 0 0 1 3.238-9.013c8.074-.9 15.353-2.806 20.612-7.228 4.999-4.204 8.992-11.398 8.992-24.805a5.334 5.334 0 0 1 5.334-5.333Zm-96 .16A5.333 5.333 0 0 1 24 50.933c0 13.283 3.983 20.432 8.992 24.645 5.278 4.438 12.578 6.39 20.679 7.396a5.333 5.333 0 0 1 3.175 9.002 12.64 12.64 0 0 0-3.526 9.676c.009.125.013.25.013.375v20.64a5.333 5.333 0 0 1-10.666 0v-20.465a23.306 23.306 0 0 1 1.597-10.028c-6.331-1.444-12.76-3.911-18.136-8.432-7.977-6.707-12.795-17.185-12.795-32.809a5.333 5.333 0 0 1 5.334-5.333ZM33.27 5.747c4.185.929 10.007 3.226 17.7 8.383a5.333 5.333 0 1 1-5.94 8.86c-6.867-4.603-11.471-6.253-14.073-6.83l-.04-.009a21.707 21.707 0 0 0 .746 12.758 5.333 5.333 0 1 1-9.993 3.73 32.373 32.373 0 0 1 .575-24.073 5.334 5.334 0 0 1 3.385-3.012l1.517 5.113C25.63 5.554 25.635 5.552 25.64 5.55l.01-.003.022-.006.045-.013.097-.026a8.832 8.832 0 0 1 .791-.163c.432-.07.966-.125 1.606-.143 1.281-.035 2.96.085 5.058.55ZM107.693 5.55c.005.002.01.004-1.506 5.117l1.516-5.113a5.335 5.335 0 0 1 3.386 3.012 32.375 32.375 0 0 1 .574 24.072 5.333 5.333 0 1 1-9.993-3.73 21.7 21.7 0 0 0 .746-12.757l-.04.009c-2.601.577-7.206 2.227-14.073 6.83a5.333 5.333 0 0 1-5.94-8.86c7.694-5.157 13.516-7.454 17.701-8.383 2.098-.466 3.777-.586 5.059-.55.639.017 1.173.073 1.605.142a8.933 8.933 0 0 1 .791.163l.097.026.045.013.021.006.011.003Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M46.605 13.412a76.693 76.693 0 0 1 40.123 0 5.333 5.333 0 1 1-2.79 10.296 66.028 66.028 0 0 0-34.543 0 5.333 5.333 0 1 1-2.79-10.296ZM30.344 26.91a5.333 5.333 0 0 1 .185 7.54A23.68 23.68 0 0 0 24 50.906a5.333 5.333 0 0 1-10.666.057 34.347 34.347 0 0 1 9.471-23.866 5.333 5.333 0 0 1 7.54-.185Zm72.645 0a5.333 5.333 0 0 1 7.54.186A34.345 34.345 0 0 1 120 50.772a5.333 5.333 0 1 1-10.667.002 23.681 23.681 0 0 0-6.529-16.323 5.334 5.334 0 0 1 .185-7.54Z" fill="currentColor"></path></svg></a>
+                </li>
+            </ul>
+        </div>
+</nav>
+<div class="modal fade" id="type-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content text-light" style="background-color: #161632; margin: auto;">
+            <div class="modal-body align-items-center d-flex">
+                <label for="modal-search" class="form-label pe-2"><svg width="1.25rem" height="1.25rem" viewBox="0 0 128 128" fill="none" title="Search" aria-label="Search" class="icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M53.333 18.667c-19.145 0-34.666 15.52-34.666 34.666C18.667 72.48 34.187 88 53.333 88 72.48 88 88 72.48 88 53.333c0-19.145-15.52-34.666-34.667-34.666ZM8 53.333C8 28.296 28.296 8 53.333 8s45.334 20.296 45.334 45.333S78.37 98.667 53.333 98.667C28.296 98.667 8 78.37 8 53.333Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M84.229 82.362a5.333 5.333 0 0 1 7.542 0l24 24a5.334 5.334 0 0 1-7.542 7.543l-24-24a5.333 5.333 0 0 1 0-7.543Z" fill="currentColor"></path></svg></label>
+                <input type="text" class="form-control text-light" style="background-color: #161632;" id="modal-email" placeholder="Search...">
+                <button type="button" class="btn-close bg-light ms-2" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button>
+            </div>
+            <hr>
+            <div class="modal-body ">
+                <p>Start typing a keyphrase to see matching snippets.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="first-section" class="d-grid justify-content-center align-items-center py-4">
+    <div class="d-flex text-light align-items-center gap-1 pb-3 fs-5 ps-3">
+        <p><a href="" class="text-decoration-none" id="homelinks">Home</a></p>
+        <p style="font-size: 15px; color: #afaab8;" class="p-1 pt-2">></p>
+        <p><a href="" class="text-decoration-none" id="javascriptlinks">JavaScript</a></p>
+        <p style="font-size: 15px; color: #afaab8;" class="p-1 pt-2">></p>
+        <p><a href="" class="text-decoration-none" id="typelinks">Type</a></p>
+    </div>
+    <div>
+        <h2 class="text-light firsthtag pb-4 ps-3">Check if a JavaScript collection is empty</h2>
+        <img src="/assets/mountain-lake-1200 (5).webp" alt="" class="img-fluid first-image rounded" >
+    </div>
+    <div class="text-light d-grid align-items-center ps-3">
+        <p class="psec py-3">When we say a collection of values is empty, we mean that it has no elements with meaningful values. In JavaScript, we can consider an array, object, or string as empty if it has no elements, properties, or characters, respectively.</p>
+        <p class="psec pb-3">While arrays and strings share a <span class="p-1 rounded" style="background-color: #18203a;">length</span> property, objects don't have a direct way to determine their size. In order to do so, we can use <span class="p-1 rounded" style="background-color: #18203a;">Object.keys()</span> to get an array of the object's keys and then check its length. Luckily, <span  class="p-1 rounded" style="background-color: #18203a;">Object.keys()</span> also works on arrays and string, returning their indices as strings.</p>
+        <p class="psec pb-3">Given this information, we can use <span class="p-1 rounded" style="background-color: #18203a;">Array.prototype.length</span> to check if the resulting keys are empty. If the value is <span class="p-1 rounded" style="background-color: #18203a;">null</span> or <span class="p-1 rounded" style="background-color: #18203a;">undefined</span>, we can consider it empty as well.</p>
+    </div>
+    <div class="text-light codebase d-grid align-items-center rounded p-3">
+        <p style="color: #c3d0d9;">JavaScript</p>
+        <p><span style="color:#dd564f;" class="pe-3">const</span><span style="color: #d2a0ec;" class="pe-3">isEmpty</span><span style="color: #3c9cf6" class="pe-3">=</span><span style="color: #f6a552;" class="pe-3">val</span><span style="color:  #3c9cf6">=></span></p>
+        <p class="ps-3">val <span style="color:#3c9cf6" class="ps-3 pe-2">===</span> <span style="color: #3c9cf6" class="pe-2">null</span> <span style="color: #3c9cf6" class="pe-2">|&nbsp;|</span> val <span style="color: #3c9cf6" class="ps-2 pe-2">===</span><span style="color: #3c9cf6" class="pe-2">undefined</span> <span style="color: #3c9cf6" class="pe-2">|&nbsp;|</span> <span style="color:  #3c9cf6">!</span> <span style="color: #f6a552;">Object</span>.<span style="color: #d2a0ec;">keys</span>(val).length;</p>
+        <p><span  style="color: #d2a0ec;">isEmpty</span>([]);              <span style="padding-left: 10em; color: #6a707b;">/&nbsp;/ true</span></p>
+        <p><span  style="color: #d2a0ec;">isEmpty</span>([1, 2]);          <span style="padding-left: 8.3em; color: #6a707b;">/&nbsp;/ false</span></p>
+        <p><span  style="color: #d2a0ec;">isEmpty</span>({});              <span style="padding-left: 9.5em; color: #6a707b;">/&nbsp;/ true</span></p>
+        <p><span  style="color: #d2a0ec;">isEmpty</span>({ a: 1, b: 2 });  <span style="padding-left: 5.3em; color: #6a707b;">/&nbsp;/ false</span></p>
+        <p><span  style="color: #d2a0ec;">isEmpty</span>('');              <span style="padding-left: 9.5em; color: #6a707b;">/&nbsp;/ true</span></p>
+        <p><span  style="color: #d2a0ec;">isEmpty</span>('text');          <span style="padding-left: 8em; color: #6a707b;">/&nbsp;/ false</span></p>
+        <p><span  style="color: #d2a0ec;">isEmpty</span>(null);            <span style="padding-left: 9em; color: #6a707b;">/&nbsp;/ true</span></p>
+        <p><span  style="color: #d2a0ec;">isEmpty</span>(undefined);       <span style="padding-left: 6em; color: #6a707b;">/&nbsp;/ true</span></p>
+    </div>`
+    <div>
+        <p style="font-size: 16px; text-align: right; color: #a099a1">Last updated: June 10, 2024 · View On GitHub</p>
+    </div>
+</section>
+<section id="thirdsection" class="pt-5 d-grid justify-content-center text-light" >
+    <h2 class="text-light px-3 align-items-center" id="new">More like this</h2>
+    <div class="d-flex justify-content-center gap-3  pt-4 px-3" id="div">
+        <div id="sub-div">
+            <a href="JSempty.html" class="text-light text-decoration-none" id="link-section">
+                <img src="/assets/laptop-plant-600.webp" alt=""class="img-fluid rounded longimg" style="width: 26em; height: 12.9em;object-fit: cover;">
+                <p class="pt-2 text-secondary" >Collection . 67 Snippet</p>
+                <h4 class="h4 fs-4">JavaScript String Snippet</h4>
+                <p class="p">Master string manipulation in JavaScript with this ES6 snippet collection.</p>
+            </a>
+        </div>
+        <div id="sub-div">
+            <a href="" class="text-light text-decoration-none" id="link-section">
+                <img src="/assets/italian-horizon-800.webp" alt=""class="img-fluid rounded" style="width: 26em;">
+                <p class="pt-2 text-secondary" >Javascript . March 17,2024</p>
+                <h4 class="h4 fs-4">Check if a JavaScript string is a vlaid JSON</h4>
+                <p class="p">Use a simple JavaScript trick to validate a serialized JSON object.</p>
+            </a>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center gap-3  pt-4 px-3" id="div">
+        <div id="sub-div">
+            <a href="" class="text-light text-decoration-none" id="link-section">
+                <img src="/assets/purple-flower-field-800.webp" alt=""class="img-fluid rounded" style="width: 26em;">
+                <p class="pt-2 text-secondary" >Javascript . November 6, 2022</p>
+                <h4 class="h4 fs-4" id="h5">Typechecking JavaScript arrays with Array.isArray()</h4>
+                <p class="p">Make sure to use the correct method when checking if a JavaScript object is an array.</p>
+            </a>
+        </div>
+        <div id="sub-div">
+            <a href="" class="text-light text-decoration-none" id="link-section">
+                <img src="/assets/dying-flowers-800.webp" alt=""class="img-fluid rounded" style="width: 26em;">
+                <p class="pt-2 text-secondary" >Javascript . October 13,2021</p>
+                <h4 class="h4 fs-4">Check object equality</h4>
+                <p class="p">Performs a deep comparison between two values to determine if they are equivalent.</p>
+            </a>
+        </div>
+    </div>
+    <section class="footer border-top justify-content-center align-items-center text-light mx-auto">
+        <div class="container-lg align-items-center">
+            <div class="d-flex pt-4 justify-content-center align-items-center  last-section-items" style="gap: 5em;">
+                <div class="text-md-start">
+                    <p class="fs-5">Hello! 👋 I’m Angelos, a professional software engineer, based in Greece. I work on 30 seconds of code in my free time to create the best resource I’ve never had when I started out as a developer.</p>
+                </div>
+                <div class="">
+                    <h5>Sitemap</h5>
+                    <div class="d-flex" id="footer-links" >
+                        <div>
+                            <p><a href="" class="text-light text-decoration-none" id="link-section" class="text-light text-decoration-none">Home</a></p>
+                            <p><a href="" class="text-light text-decoration-none">Snippets</a></p>
+                            <p><a href="" class="text-light text-decoration-none">Collection</a></p>
+                        </div>
+                        <div style="padding-left: 2em;">
+                            <p><a href="" class="text-light text-decoration-none">About</a></p>
+                            <p><a href="" class="text-light text-decoration-none">FAQ</a></p>
+                            <P><a href="" class="text-light text-decoration-none">RSS</a></P>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="py-4" style="line-height: 0.5em; color: #a6a1b0">
+                <p class="text-center">Powered by Netlify, Astro & GitHub</p>
+                <p class="text-center">© 2017-2024 Angelos Chalaris. All rights reserved.</p>
+            </div>
+                 
+        </div>
+
+    </section>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
